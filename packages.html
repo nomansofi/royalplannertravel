@@ -181,8 +181,8 @@
             <a id="emailNowBtn" href="mailto:royalplannertravels@gmail.com">Email Us</a>
         </div>
 
-        <p class="popup-contact">📞 +91 9149737285</p>
-        <p class="popup-contact">📧 royalplannertravels@gmail.com</p>
+        <p class="popup-contact"><a href="tel:+919149737285">📞 +91 9149737285</a></p>
+        <p class="popup-contact"><a id="emailTextLink" href="mailto:royalplannertravels@gmail.com">📧 royalplannertravels@gmail.com</a></p>
         <p class="popup-contact">
             📸 Instagram:
             <a href="https://instagram.com/royalplannertravels" target="_blank" rel="noopener">@royalplannertravels</a>
@@ -195,9 +195,11 @@
 <script>
 function openPopup(packageName){
     document.getElementById("selectedPackage").innerText = packageName;
-    document.getElementById("emailNowBtn").href =
+    const mailHref =
         "mailto:royalplannertravels@gmail.com?subject=" +
         encodeURIComponent("Booking Request - " + packageName);
+    document.getElementById("emailNowBtn").href = mailHref;
+    document.getElementById("emailTextLink").href = mailHref;
     document.getElementById("contactPopup").style.display = "flex";
 }
 
