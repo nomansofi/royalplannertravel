@@ -1,0 +1,9 @@
+{
+  "name": "royal-planner",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "python3 start.py",
+    "dev": "python3 start.py"
+  }
+}
