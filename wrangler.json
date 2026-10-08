@@ -1,8 +1,8 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "royalplannertravel",
-  "compatibility_date": "2026-10-07",
+  "compatibility_date": "2026-10-08",
   "assets": {
-    "directory": "./"
+    "directory": "./public"
   }
 }
