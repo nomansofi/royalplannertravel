@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Planner Tour Packages</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="subpage">
+    <nav class="page-nav">
+        <div class="logo">
+            <h2>ROYAL PLANNER</h2>
+            <span>TOUR AND TRAVELERS</span>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="packages.html" class="active">Packages</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+<section class="tour-packages">
+
+    <h1 class="section-title">Our Kashmir Tour Packages</h1>
+
+    <div class="package-grid">
+
+        <!-- Honeymoon Package -->
+        <div class="package-card">
+            <img src="Srinagar-Pre-Wedding-Photo-Shoot.jpg" alt="Honeymoon Package">
+
+            <div class="package-content">
+                <h2>💑 Honeymoon Special</h2>
+
+                <p class="duration">5 Days / 4 Nights</p>
+
+                <ul class="features">
+                    <li>✔ Deluxe Hotel Stay</li>
+                    <li>✔ Daily Breakfast & Dinner</li>
+                    <li>✔ Romantic Shikara Ride</li>
+                    <li>✔ Flower Decoration</li>
+                    <li>✔ Airport Pickup & Drop</li>
+                    <li>✔ Sightseeing Included</li>
+                </ul>
+
+                <button onclick="openPopup('Honeymoon Special')">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Family Package -->
+        <div class="package-card">
+            <img src="Family-enjoying-Kashmir-holiday-package-transparent-pricing-for-family-tours-1024x1024.png" alt="Family Package">
+
+            <div class="package-content">
+                <h2>👨‍👩‍👧 Family Package</h2>
+
+                <p class="duration">6 Days / 5 Nights</p>
+
+                <ul class="features">
+                    <li>✔ Hotel Accommodation</li>
+                    <li>✔ Breakfast & Dinner</li>
+                    <li>✔ Srinagar Sightseeing</li>
+                    <li>✔ Gulmarg & Pahalgam Visit</li>
+                    <li>✔ Airport Transfers</li>
+                    <li>✔ Family Activities</li>
+                </ul>
+
+                <button onclick="openPopup('Family Package')">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Friends Package -->
+        <div class="package-card">
+            <img src="1_9SD5ZbanlWPC73JMiZBf6A.jpg" alt="Friends Package">
+
+            <div class="package-content">
+                <h2>👬 Friends Adventure</h2>
+
+                <p class="duration">4 Days / 3 Nights</p>
+
+                <ul class="features">
+                    <li>✔ Camping Experience</li>
+                    <li>✔ Trekking Activities</li>
+                    <li>✔ Bonfire Night</li>
+                    <li>✔ Breakfast Included</li>
+                    <li>✔ Local Guide</li>
+                    <li>✔ Transport Included</li>
+                </ul>
+
+                <button onclick="openPopup('Friends Adventure')">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Gulmarg Package -->
+        <div class="package-card">
+            <img src="3D2NGulmargSkiingPackagewith3_Hotel%2CMeals%2CGondolaTickets.jpg" alt="Gulmarg Package">
+
+            <div class="package-content">
+                <h2>🎿 Gulmarg Snow Package</h2>
+
+                <p class="duration">3 Days / 2 Nights</p>
+
+                <ul class="features">
+                    <li>✔ Hotel Stay</li>
+                    <li>✔ Breakfast Included</li>
+                    <li>✔ Gondola Ride</li>
+                    <li>✔ Snow Activities</li>
+                    <li>✔ Sightseeing Tour</li>
+                    <li>✔ Pickup & Drop</li>
+                </ul>
+
+                <button onclick="openPopup('Gulmarg Snow Package')">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Luxury Package -->
+        <div class="package-card">
+            <img src="Ultimate-luxury-Kashmir-tour-package-experience-premium-houseboat-on-Dal-Lake-with-private-shikara-and-mountain-views-at-sunset.png" alt="Luxury Package">
+
+            <div class="package-content">
+                <h2>💎 Luxury Kashmir</h2>
+
+                <p class="duration">7 Days / 6 Nights</p>
+
+                <ul class="features">
+                    <li>✔ 4-Star / 5-Star Hotels</li>
+                    <li>✔ Private Vehicle</li>
+                    <li>✔ Houseboat Stay</li>
+                    <li>✔ All Meals Included</li>
+                    <li>✔ Premium Sightseeing</li>
+                    <li>✔ Airport Transfers</li>
+                </ul>
+
+                <button onclick="openPopup('Luxury Kashmir')">Book Now</button>
+            </div>
+        </div>
+
+        <!-- Explorer Package -->
+        <div class="package-card">
+            <img src="OIP.webp" alt="Explorer Package">
+
+            <div class="package-content">
+                <h2>🏔 Kashmir Explorer</h2>
+
+                <p class="duration">8 Days / 7 Nights</p>
+
+                <ul class="features">
+                    <li>✔ Srinagar Tour</li>
+                    <li>✔ Gulmarg Visit</li>
+                    <li>✔ Pahalgam Tour</li>
+                    <li>✔ Sonamarg Excursion</li>
+                    <li>✔ Breakfast Included</li>
+                    <li>✔ Local Guide</li>
+                </ul>
+
+                <button onclick="openPopup('Kashmir Explorer')">Book Now</button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Contact Popup -->
+
+<div id="contactPopup" class="popup">
+
+    <div class="popup-content">
+
+        <span class="close" onclick="closePopup()">&times;</span>
+
+        <h2>Book Your Package</h2>
+
+        <h3 id="selectedPackage"></h3>
+
+        <p class="popup-note">Contact us to confirm your booking:</p>
+
+        <div class="contact-btns popup-btns">
+            <a id="callNowBtn" href="tel:+919149737285">Call Now</a>
+            <a id="emailNowBtn" href="mailto:royalplannertravels@gmail.com">Email Us</a>
+        </div>
+
+        <p class="popup-contact"><a href="tel:+919149737285">📞 +91 9149737285</a></p>
+        <p class="popup-contact"><a id="emailTextLink" href="mailto:royalplannertravels@gmail.com">📧 royalplannertravels@gmail.com</a></p>
+        <p class="popup-contact">
+            📸 Instagram:
+            <a href="https://instagram.com/royalplannertravels" target="_blank" rel="noopener">@royalplannertravels</a>
+        </p>
+
+    </div>
+
+</div>
+
+<script>
+function openPopup(packageName){
+    document.getElementById("selectedPackage").innerText = packageName;
+    const mailHref =
+        "mailto:royalplannertravels@gmail.com?subject=" +
+        encodeURIComponent("Booking Request - " + packageName);
+    document.getElementById("emailNowBtn").href = mailHref;
+    document.getElementById("emailTextLink").href = mailHref;
+    document.getElementById("contactPopup").style.display = "flex";
+}
+
+function closePopup(){
+    document.getElementById("contactPopup").style.display = "none";
+}
+
+window.onclick = function(event){
+    let popup = document.getElementById("contactPopup");
+    if(event.target === popup){
+        popup.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

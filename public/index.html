@@ -1,1 +1,236 @@
-<!-- temporary -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Planner Tours</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="overlay"></div>
+
+    <nav>
+        <div class="logo">
+            <h2>ROYAL PLANNER</h2>
+            <span>TOUR AND TRAVELERS</span>
+        </div>
+
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-content">
+        <h1>DISCOVER KASHMIR</h1>
+
+        <p>
+            Experience the magic of Kashmir with our expertly curated tours
+            and personalized itineraries.
+        </p>
+
+       <a href="packages.html" class="hero-btn">
+    BOOK NOW
+</a>
+    </div>
+
+</section>
+<section class="destinations">
+
+    <h2>Popular Destinations</h2>
+
+    <div class="destination-grid">
+
+        <div class="card">
+            <img src="sourav-bhadra--zRhJ0V9vKI-unsplash.jpg" alt="Pahalgam">
+            <div class="card-content">
+                <h3>Pahalgam</h3>
+                <p>
+                   Explore breathtaking valleys, scenic rivers, lush pine forests, and stunning Himalayan landscapes.
+                </p>
+                <button onclick="openPahalgamPopup()">Learn More</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="murtaza-ali-uxhQCPPL1wU-unsplash.jpg" alt="Dal Lake , srinagar">
+            <div class="card-content">
+                <h3>Dal Lake, Srinagar</h3>
+                <p>
+                    Enjoy serene shikara rides, floating gardens, vibrant houseboats, and breathtaking mountain views.
+                </p>
+                <button onclick="openDalLakePopup()">Learn More</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="ankur-khandelwal-IUfXjtsR6ec-unsplash.jpg" alt="Sonamarg">
+            <div class="card-content">
+                <h3>Sonamarg, Ganderbal</h3>
+                <p>
+                    Experience scenic camping, starry nights, alpine meadows, and breathtaking Himalayan landscapes.
+                </p>
+                <button onclick="openSonamargPopup()">Learn More</button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PACKAGES -->
+<section class="packages">
+
+    <div class="content">
+
+        <div class="text">
+
+            <h2>Explore Kashmir Your Way</h2>
+
+            <p>
+                Find the perfect tour package to suit your interests and budget.
+                From cultural immersion to adventure-seeking,
+                we have something for everyone.
+            </p>
+
+            <a href="packages.html" class="view-btn">View Packages</a>
+            
+
+        </div>
+
+        <div class="images">
+
+            <div class="polaroid one">
+                <img src="sumaid-pal-singh-bakshi-pAvK_EZMg4Q-unsplash.jpg" alt="">
+            </div>
+
+            <div class="polaroid two">
+                <img src="digjot-singh-Vkkg9XoUcZI-unsplash.jpg" alt="">
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Pahalgam Popup -->
+
+<div id="pahalgamPopup" class="popup">
+
+    <div class="popup-content">
+
+        <span class="close" onclick="closePahalgamPopup()">&times;</span>
+
+        <h2>Pahalgam Tour Highlights</h2>
+
+        <ul>
+            <li>✔ Visit Betaab Valley</li>
+            <li>✔ Explore Aru Valley</li>
+            <li>✔ Sightseeing at Chandanwari</li>
+            <li>✔ Horse Riding Adventures</li>
+            <li>✔ Pine Forest Walks</li>
+            <li>✔ River Rafting Activities</li>
+            <li>✔ Photography at Scenic Locations</li>
+            <li>✔ Camping Under the Stars</li>
+            <li>✔ Local Kashmiri Food Experience</li>
+            <li>✔ Private Transport & Guide</li>
+        </ul>
+
+    </div>
+
+</div>
+<!-- Dal Lake Popup -->
+
+<div id="dalLakePopup" class="popup">
+
+    <div class="popup-content">
+
+        <span class="close" onclick="closeDalLakePopup()">&times;</span>
+
+        <h2>Dal Lake Experience</h2>
+
+        <ul>
+            <li>✔ Traditional Shikara Ride</li>
+            <li>✔ Luxury Houseboat Stay</li>
+            <li>✔ Floating Market Visit</li>
+            <li>✔ Floating Garden Tour</li>
+            <li>✔ Sunrise & Sunset Views</li>
+            <li>✔ Photography Tours</li>
+            <li>✔ Kashmiri Cuisine Experience</li>
+            <li>✔ Mughal Garden Visit</li>
+            <li>✔ Nishat & Shalimar Garden Tour</li>
+            <li>✔ Private Transport & Guide</li>
+        </ul>
+
+    </div>
+
+</div>
+<!-- Sonamarg Popup -->
+
+<div id="sonamargPopup" class="popup">
+
+    <div class="popup-content">
+
+        <span class="close" onclick="closeSonamargPopup()">&times;</span>
+
+        <h2>Sonamarg Adventure Experience</h2>
+
+        <ul>
+            <li>✔ Visit the Famous Thajiwas Glacier</li>
+            <li>✔ Horse Riding Tours</li>
+            <li>✔ Trekking & Hiking Adventures</li>
+            <li>✔ Camping Under the Stars</li>
+            <li>✔ River Rafting Activities</li>
+            <li>✔ Photography at Scenic Locations</li>
+            <li>✔ Explore Alpine Meadows</li>
+            <li>✔ Snow Activities (Seasonal)</li>
+            <li>✔ Picnic by Sindh River</li>
+            <li>✔ Private Vehicle & Local Guide</li>
+        </ul>
+
+    </div>
+
+</div>
+<script>
+    function openSonamargPopup(){
+    document.getElementById("sonamargPopup").style.display = "flex";
+}
+
+function closeSonamargPopup(){
+    document.getElementById("sonamargPopup").style.display = "none";
+}
+    function openDalLakePopup(){
+    document.getElementById("dalLakePopup").style.display = "flex";
+}
+
+function closeDalLakePopup(){
+    document.getElementById("dalLakePopup").style.display = "none";
+}
+
+function openPahalgamPopup(){
+    document.getElementById("pahalgamPopup").style.display = "flex";
+}
+
+function closePahalgamPopup(){
+    document.getElementById("pahalgamPopup").style.display = "none";
+}
+
+window.onclick = function(event){
+    ["pahalgamPopup", "dalLakePopup", "sonamargPopup"].forEach(function(id){
+        let popup = document.getElementById(id);
+        if(event.target === popup){
+            popup.style.display = "none";
+        }
+    });
+}
+
+</script>
+
+</body>
+</html>
